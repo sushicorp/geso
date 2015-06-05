@@ -1,3 +1,0 @@
-stylus -u nib -w main.styl -o dist/bundle.css
-http-server
-wtch
