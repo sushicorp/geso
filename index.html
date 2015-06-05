@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<title>Geso</title>
 	<link rel="stylesheet" href="dist/bundle.css">
 </head>
 <body>
+	<div class="hero">
+		<div class="h1">Geso CSS Framework</div>
+	</div>
 	<div class="container">
+		<p>Gesoは、日本語サイトを素早く書き始めるためのCSSフレームワークもどきです。</p>
 		
-		<p class="h1">Geso CSS Framework</p>
-		
-		<p>Gesoは、日本語サイトを素早く書き始めるためのボイラープレートです。</p>
+		<div class="entry-title">
+			特徴
+		</div>
+		<div class="entry-content">
+			<ul>
+				<li><a href="https://learnboost.github.io/stylus/">stylus</a> + nibベース</li>
+				<li>スタイルの上書きが面倒くさいので、定義は最低限</li>
+				<li>日本語が読みやすいCSS</li>
+			</ul>
+		</div>
+	
+		<ul></ul>
 		
 		<div class="card">
 			<div class="entry-title">
@@ -34,16 +47,26 @@
 		
 		<div class="buttons">
 			<p>
-				<a href="" class="btn">ボタン</a>
-			</p>
-			<p>
 				<button class="btn">ボタンだよ</button>
 				<button class="btn" disabled>押せないボタン</button>
+				<button class="btn btn-primary">ボタンだよ</button>
 			</p>
-			
-			
 		</div>
-		
+
+		<button class="btn animateCard" onclick="flip()">Animate</button>
+		<div class="card flipcard">
+			Test
+		</div>
 	</div>
+	<footer class="footer">
+		<div class="container" style="text-align: center">
+		  <p>Sushicorp, <a href="">GitHub</a></p>
+		</div>
+	</footer>	
+	<script>
+		function flip(){
+			document.querySelectorAll('.flipcard')[0].classList.add('animate');
+		}
+	</script>
 </body>
 </html>
