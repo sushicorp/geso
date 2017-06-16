@@ -1,23 +1,11 @@
+*This repo is experimental*
+
 # geso
+
+CSS framework using CSS @apply Rule
 
 # Usage
 
-Install
+ * [Turn on your Experimental Web Platform features](chrome://flags/#enable-experimental-web-platform-features)
+ * Just include to your html!
 
-```
-npm install -g stylus nib wtch http-server
-git clone git@github.com:sushicorp/geso.git
-cd geso
-```
-
-To compile
-```
-npm run watch
-```
-
-
-To preview
-
-```
-npm run preview
-```
