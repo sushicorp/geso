@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Geso</title>
-	<link rel="stylesheet" href="dist/bundle.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
 	<div class="hero">
@@ -41,10 +41,6 @@
 			</div>
 		</div>
 		
-		<div class="outer">
-			<p class="box-center">センタリング</p>
-		</div>
-		
 		<div class="buttons">
 			<p>
 				<button class="btn">ボタンだよ</button>
@@ -52,21 +48,11 @@
 				<button class="btn btn-primary">ボタンだよ</button>
 			</p>
 		</div>
-
-		<button class="btn animateCard" onclick="flip()">Animate</button>
-		<div class="card flipcard">
-			Test
-		</div>
 	</div>
 	<footer class="footer">
 		<div class="container" style="text-align: center">
 		  <p>Sushicorp, <a href="https://github.com/sushicorp/geso">GitHub</a></p>
 		</div>
 	</footer>	
-	<script>
-		function flip(){
-			document.querySelectorAll('.flipcard')[0].classList.add('animate');
-		}
-	</script>
 </body>
 </html>
